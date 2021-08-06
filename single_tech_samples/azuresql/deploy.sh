@@ -26,15 +26,15 @@ set -o pipefail
 # set -o xtrace # For debugging
 
 # REQUIRED VARIABLES:
-# GITHUB_REPO_URL - Github URL
-# GITHUB_PAT_TOKEN - Github PAT Token
+$GITHUB_REPO_URL = "https://github.com/MaciejPredica/modern-data-warehouse-dataops.git"
+$GITHUB_PAT_TOKEN - "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"
 
 # OPTIONAL VARIABLES
 # DEPLOYMENT_ID - Identifier to append to names of resource created for this deployment. Resources will also be tagged with this. Defaults to generated string.
 # BRANCH_NAME - Branch that pipelines will be deployed for. Defaults to main.
 # AZURESQL_SERVER_PASSWORD - Password for the sqlAdmin account. Defaults to generated value.
-# RESOURCE_GROUP_NAME - resource group name
-# RESOURCE_GROUP_LOCATION - resource group location (ei. australiaeast)
+$RESOURCE_GROUP_NAME = "DataOps"
+$RESOURCE_GROUP_LOCATION - "North Europe"
 
 . ./scripts/common.sh
 . ./scripts/init_environment.sh
