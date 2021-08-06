@@ -27,7 +27,7 @@ set -o pipefail
 
 # REQUIRED VARIABLES:
 $GITHUB_REPO_URL = "https://github.com/MaciejPredica/modern-data-warehouse-dataops.git"
-$GITHUB_PAT_TOKEN - "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"
+$GITHUB_PAT_TOKEN - 
 
 # OPTIONAL VARIABLES
 # DEPLOYMENT_ID - Identifier to append to names of resource created for this deployment. Resources will also be tagged with this. Defaults to generated string.
